@@ -1,0 +1,37 @@
+\documentclass{tubsphilha}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\author{Jonas Grosse-Holz}
+\matrnr{4600002}
+\title{Dokument zum Testen der \LaTeX-Vorlage für Hausarbeiten}
+\course{Philosophisches Propädeutikum}
+\lecturer{Steffen Stolzenberger}
+\studypath{2-Fächer-Bachelor Philosophie/Mathematik}
+\module{B1}
+
+\addbibresource{biblio.bib}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\section{Einleitung}
+\lipsum[1] \parencite{book}
+\section{Hauptteil}
+\lipsum[2]
+\subsection{Unterabschnitt}
+\lipsum[6]
+\subsubsection{Unteruntertitel}
+\lipsum[3]
+\subsection{Zweiter Unterabschnitt}
+\lipsum[4]
+\section{Schluss}
+\lipsum[5]
+\newpage
+\printbibliography[heading=bibintoc]
+\newpage
+\statement
+\end{document}
