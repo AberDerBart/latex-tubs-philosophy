@@ -40,16 +40,13 @@
 % Gestaltung des Deckblatts
 
 \renewcommand{\maketitle}{
-	\hfill\begin{tabular}{rl}
-		Autor:& \@author\\
-		Matrikelnummer:& \@matrnr\\
+	\begin{tabular}{rl}
+		Autor:& \@author, \@matrnr\\
 	%	Studiengang:& \@studypath\\
 		Dozent:& \@lecturer\\
 		Modul:& \@module\\
-	\end{tabular}
-	\begin{center}
-		\large
-		\textbf{Protokoll zur Sitzung am \@date{} der Veranstaltung \@course}\\
-		\normalsize
-	\end{center}
+	\end{tabular}\\\\
+	\large
+	\textbf{Protokoll zur Sitzung am \@date{} der Veranstaltung \emph{\@course}}\\
+	\normalsize
 }
